@@ -1,0 +1,279 @@
+* {
+    font-family: "Roboto", "Open Sans", sans-serif;
+}
+
+body::before {	
+	background-size: cover;
+    background-attachment: fixed;
+    content: "";
+    will-change: transform;
+    z-index: -1;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    position: fixed;
+}
+
+body {
+    background-color: #c1a24e;
+}
+
+a {
+    color: #c1a24e;
+    text-decoration: none;
+}
+
+.banner {
+    background: url('../images/bg_2048.jpg') top center / cover no-repeat fixed #c1a24e;
+    height: 500px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+::selection {
+    background: #c1a24e;
+    color: #fff;
+}
+
+.mdl-layout__container {
+    height: auto;
+}
+
+.mdl-layout__header {
+    background-color: #fff;
+    position: absolute;
+}
+
+.mdl-layout__header-row {
+    height: auto;
+    padding: 16px;
+}
+
+.mdl-cell {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.mdl-color--white {
+    border-radius: 2px;
+}
+
+.mdl-color--white > .mdl-card__actions {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    box-sizing: border-box;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.mdl-textfield--floating-label.is-focused .mdl-textfield__label,
+.mdl-button.mdl-button--colored {
+    color: #c1a24e;
+}
+
+.mdl-textfield__label:after {
+    background-color: #c1a24e;
+}
+
+.footer-link {
+    display: inline-block;
+    padding: 16px 0;
+}
+
+.font-size__big {
+    font-size: 2em;
+    line-height: 1.5;
+}
+
+.text-align__justify {
+    text-align: justify;
+}
+
+.font-color__white {
+    color: #fff;
+}
+
+.mdl-textfield {
+    width: 100%;
+}
+
+.mdl-card {
+    width: 100%;
+}
+
+.mdl-card-info__1 > .mdl-card__title {
+  color: #fff;
+  height: 200px;
+  background: url('http://unsplash.it/1920/1080/?image=1027') center / cover;
+}
+
+.mdl-card-info__2 > .mdl-card__title {
+  color: #fff;
+  height: 200px;
+  background: url('http://unsplash.it/1920/1080/?image=823') center / cover;
+}
+
+@media screen and (min-width: 1025px) {
+    .mdl-layout__header {
+        background: transparent;
+        -moz-box-shadow:    inset 0 24px 24px -20px rgba(0,0,0,0.3);
+        -webkit-box-shadow: inset 0 24px 24px -20px rgba(0,0,0,0.3);
+                box-shadow: inset 0 24px 24px -20px rgba(0,0,0,0.3);
+    }
+
+    .mdl-layout__header-row {
+        padding: 16px 40px 16px 80px;
+    }
+
+    .section-full-width {
+        max-width: 980px;
+        margin: auto;
+    }
+
+    .section-full-width:nth-child(2) {
+        margin: 18em auto 0;
+    }
+
+    .mdl-color--white {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .social-btn {
+        width: 24px;
+        height: 24px;
+    }
+
+    .mdl-mini-footer {
+        align-items: center;
+    }
+
+    .mdl-card-info {
+        flex-direction: row;
+    }
+
+    .mdl-card__supporting-text {
+        width: 100%;
+    }
+
+    .mdl-card-info > .mdl-card__title {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-color: #212121;
+    }
+
+    .mdl-layout__header {
+        background-color: #c1a24e;
+        position: fixed;
+    }
+
+    .mdl-layout__header ul.mdl-menu {
+        background-color: #c1a24e;
+    }
+
+    .mdl-layout__content {
+        margin-top: 6em;
+    }
+
+    .mdl-mini-footer--left-section {
+        margin: 0 0 8px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .mdl-color--white {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    font-color-small-screen__white {
+        color: #fff;
+    }
+}
+
+.mdl-textfield__label {
+    color: rgba(0,0,0,.35);
+}
+
+.social-btn {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin: 0 16px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    opacity: 0.46;
+    border-radius: 2px;
+}
+
+.social-btn:first-child {
+    margin: 0 16px 0 0;
+}
+
+.social-btn__facebook {
+    background-image: url('../images/facebook-box.png');
+}
+
+.social-btn__twitter {
+    background-image: url('../images/twitter-box.png');
+}
+
+.social-btn__gplus {
+    background-image: url('../images/google-plus-box.png');
+}
+
+.empresa-logo {
+    height: auto;
+    max-height: 48px;
+}
+
+.logo-link {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    text-decoration: none;
+}
+
+.logo-text {
+    font-size: 1.5em;
+    color: #424242;
+    line-height: normal;
+    padding: 0 5%;
+    text-decoration: none;
+    white-space: nowrap;
+}
